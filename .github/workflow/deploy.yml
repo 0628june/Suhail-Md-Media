@@ -1,0 +1,23 @@
+nane: Node-Js CI
+on:
+push:
+branches:
+- main
+pull request: branches:
+- main
+I
+Jobs:
+build:
+runs-on: ubuntu-latest
+strategy:
+. matrix:
+node-version: [20.x]
+steps:
+- nae: Checkout repository uses: actions/checkoutev3
+- name: Set up Node,1s
+uses: actions/setup-nodegy3 with:
+node-version: $[( aatrix,node-version ))
+- nase: Install dependencies punt ope Install
+Dane: Start
+application
+runs noo starti
